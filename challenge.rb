@@ -6,9 +6,13 @@
 
 # 1. Read this file. What do you expect it to do when
 #    you run it?
+# => Print out how many A's and Z's there are.
 # 2. Now run it. Are there any bugs?
+# => No bugs so far
 # 3. Can you make any improvements to the program?
+# => I believe I can 
 # 4. How many Q's are there in "prufrock.txt"?
+# => There is one
 # 5. (Harder) What are the 5 most common letters in "prufrock.txt"?
 
 # When you're done (at least with 4), commit your work,
@@ -16,7 +20,7 @@
 
 require 'pry'
 
-text = File.read "fox.txt"
+text = File.read "prufrock.txt"
 
 cs = Hash.new
 text.chars.each do |l|
@@ -27,8 +31,8 @@ text.chars.each do |l|
   end
 end
 
-ac = cs[:a]
-zc = cs[:z]
+ac = cs[:Q]
+zc = cs[:Q]
 
 #puts "Text is: #{text}"
-puts "There are #{ac} A's and #{zc} Z's"
+puts "There are #{ac} Q's and #{zc} Q's"
